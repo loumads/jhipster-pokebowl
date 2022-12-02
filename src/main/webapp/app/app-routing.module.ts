@@ -5,6 +5,9 @@ import { errorRoute } from './layouts/error/error.route';
 import { navbarRoute } from './layouts/navbar/navbar.route';
 import { DEBUG_INFO_ENABLED } from 'app/app.constants';
 import { Authority } from 'app/config/authority.constants';
+import { filtersRoute } from './filters/filters.route';
+import { cardRoute } from './card/card.route';
+import { navPokebowlRoute } from './nav-pokebowl/nav-pokebowl.route';
 
 import { UserRouteAccessService } from 'app/core/auth/user-route-access.service';
 
@@ -33,6 +36,9 @@ import { UserRouteAccessService } from 'app/core/auth/user-route-access.service'
           loadChildren: () => import(`./entities/entity-routing.module`).then(m => m.EntityRoutingModule),
         },
         navbarRoute,
+        navPokebowlRoute,
+        filtersRoute,
+        cardRoute,
         ...errorRoute,
       ],
       { enableTracing: DEBUG_INFO_ENABLED }

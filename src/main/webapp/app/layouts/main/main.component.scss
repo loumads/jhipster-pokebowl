@@ -1,0 +1,25 @@
+.grid {
+  display: flex;
+  flex-direction: row;
+
+  > * {
+    &:nth-child(1) {
+      background-color: #eeedff;
+      width: calc(100% / 3 * 1);
+      padding: 20px;
+    }
+
+    &:nth-child(2) {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0;
+      background-color: #ffffff;
+      width: calc(100% / 3 * 2);
+      padding: 20px;
+    }
+  }
+}
+
+.box {
+  flex: 0 0 33.333333%;
+}

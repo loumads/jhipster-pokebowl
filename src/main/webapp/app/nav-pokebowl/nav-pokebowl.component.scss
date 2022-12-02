@@ -1,0 +1,39 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
+.navbar {
+  padding: 30px 20px 30px 20px;
+  display: flex;
+  background-color: #556c96;
+  a.nav-link {
+    font-weight: 400;
+  }
+}
+
+.search {
+  display: flex;
+}
+
+.input {
+  border: 2px solid #b6cde8;
+  border-radius: 12px;
+}
+
+.button {
+  margin-left: 10px;
+  transition-duration: 0.4s;
+  background-color: white;
+  color: #b6cde8;
+  border: 2px solid #b6cde8;
+  border-radius: 12px;
+}
+
+.button:hover {
+  background-color: #b6cde8; /* Green */
+  color: white;
+}
+
+.navbar-title {
+  color: #ffffff;
+  font-size: 2em;
+}

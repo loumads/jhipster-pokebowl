@@ -1,13 +1,16 @@
-<jhi-page-ribbon></jhi-page-ribbon>
-
 <div>
   <router-outlet name="navbar"></router-outlet>
 </div>
 
-<div class="container-fluid">
-  <div class="card jh-card">
-    <router-outlet></router-outlet>
-  </div>
+<router-outlet name="navpokebowl"></router-outlet>
 
-  <jhi-footer></jhi-footer>
+<div class="grid">
+  <div>
+    <router-outlet name="filters"></router-outlet>
+  </div>
+  <div>
+    <jhi-card class="box" *ngFor="let card of Cards" [card]="card"></jhi-card>
+  </div>
 </div>
+
+<jhi-footer></jhi-footer>
